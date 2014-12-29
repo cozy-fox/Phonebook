@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+	<window id="phonePageWindow" border="normal" width="100%" height="100%" apply="org.bibliarij.basphonebook.ui.PhoneBookPage">
+        <listbox id="entriesListbox" height="400px" autopaging="true" apply="org.bibliarij.basphonebook.ui.ListboxComposer">
+            <auxhead>
+                <auxheader
+                        label="Телефонная книга" colspan="8" />
+            </auxhead>
+            <listhead>
+                <listheader hflex="2" label="ФИО"/>
+                <listheader hflex="2" label="Дата рождения"/>
+                <listheader hflex="2" label="Адрес"/>
+                <listheader hflex="2" label="Номер телефона"/>
+                <listheader hflex="2" label="Редактировать"/>
+                <listheader hflex="2" label="Экспортировать в Excel"/>
+                <listheader hflex="2" label="Экспортировать в PDF"/>
+                <listheader hflex="2" label="Удалить"/>
+            </listhead>
+        </listbox>
+        <groupbox>
+            <button id="createEntryButton" label="Создать"/>
+            <textbox id="findFieldTextbox" style="margin-left: 50px"/>
+            <button id="findEntryButton" label="Найти"/>
+        </groupbox>
+	</window>
+</zk>

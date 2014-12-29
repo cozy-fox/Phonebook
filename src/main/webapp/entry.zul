@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+    <window id="entryPageWindow" position="center, center" closable="true" border="normal" title="Запись телефонной книги" apply="org.bibliarij.basphonebook.ui.EntryPage">
+        <div>
+            <label value="Фамилия Имя Отчество"/>
+            <textbox id="surnameNamePatronymicTextbox" style="margin-left: 10px"/>
+        </div>
+        <div>
+            <label value="Дата рождения"/>
+            <datebox id="birthDateDateBox" style="margin-left: 57px" width="138px"/>
+        </div>
+        <div>
+            <label value="Адрес"/>
+            <textbox id="addressTextbox" style="margin-left: 110px"/>
+        </div>
+        <div>
+            <label value="Номер телефона"/>
+            <textbox id="phoneNumberTextbox" style="margin-left: 45px"/>
+        </div>
+        <div>
+            <label value="Фотография"/>
+            <image id="photoImage" width="100px" height="100px" style="margin-top: 5px"/>
+            <button id="photoUploadButton" label="Выберите файл" upload="true"/>
+        </div>
+        <div style="margin-top: 5px">
+            <button id="saveButton" label="Сохранить"/>
+            <button id="cancelButton" label="Отмена"/>
+        </div>
+    </window>
+</zk>

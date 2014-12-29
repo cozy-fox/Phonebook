@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: ZK Application
+Specification-Version: 1.0
+Specification-Vendor: Business Application Solutions
+Implementation-Title: Task "Phone book" for Business Application Solutions
+Implementation-URL: http://your-website/
+Implementation-Version: 1.0
+Implementation-Vendor: Bibliarij

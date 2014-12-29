@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://192.168.43.129:3306/basphonebook</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.username">admin</property>
+    <property name="connection.password">123456</property>
+    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <!-- DB schema will be updated if needed -->
+    <property name="hbm2ddl.auto">update</property>
+
+    <mapping class="org.bibliarij.basphonebook.db.Entry"/>
+  </session-factory>
+</hibernate-configuration>
